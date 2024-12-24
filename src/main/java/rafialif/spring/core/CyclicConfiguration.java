@@ -3,13 +3,11 @@ package rafialif.spring.core;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
 import rafialif.spring.core.data.cyclic.CyclicA;
 import rafialif.spring.core.data.cyclic.CyclicB;
 import rafialif.spring.core.data.cyclic.CyclicC;
 
 @Configuration
-
 public class CyclicConfiguration {
     @Bean
     public CyclicA cyclicA(CyclicB cyclicB) {

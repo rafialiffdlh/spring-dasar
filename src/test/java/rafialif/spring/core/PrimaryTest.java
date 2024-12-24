@@ -11,7 +11,6 @@ import rafialif.spring.core.data.Foo;
 public class PrimaryTest {
 
   private ApplicationContext applicationContext;
-
   @BeforeEach
   void setUp() {
     applicationContext = new AnnotationConfigApplicationContext(PrimaryConfiguration.class);

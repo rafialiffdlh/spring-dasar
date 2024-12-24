@@ -9,10 +9,8 @@ public class CyclicTest {
 
   @Test
   void testCyclic() {
-
     Assertions.assertThrows(Throwable.class, () -> {
       ApplicationContext context = new AnnotationConfigApplicationContext(CyclicConfiguration.class);
     });
-
   }
 }
